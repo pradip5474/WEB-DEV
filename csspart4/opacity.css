@@ -1,0 +1,12 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(100, 0, 0, 0);
+    
+    
+}
+#opacity{
+    background-color: pink;
+    opacity: 0;
+    
+}

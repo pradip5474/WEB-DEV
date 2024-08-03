@@ -1,0 +1,33 @@
+#mainTopic{
+    color: blue;
+
+}
+*{
+    text-align: center;
+}
+h1,h3,h5{
+    font-style: Georgia;
+}
+h1::first-letter{
+    color: red  ;
+}
+#p{
+    color: white;
+    background-color: cornflowerblue;
+
+}
+div button{
+    background-color: purple;
+    color: azure;
+}
+div button:hover{
+    background-color: yellow;
+    color: blue;
+}
+#p:nth-of-type(2n+1){
+    color: yellow;
+}
+input:checked+ label{
+    font-weight: bolder;
+    color: darkgreen;
+}

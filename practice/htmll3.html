@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="3">
+        <caption>Student Information</caption>
+        <tr>
+            <th rowspan="6">Info</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Address</th>
+        </tr>
+        <tr>
+            <th>City</th>
+            <th>Hause</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>Delhi</td> 
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Mumbai</td> 
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Kolkata</td> 
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>Pune</td> 
+            <td>4</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>new question </h3>
+
+     <form action="/server">
+        <label for="Name">Name:</label> 
+        <input type="text" name="Name" id="Name">
+        <br>
+        <br>
+        <label for="gender">Sex:</label>
+        <input type="radio" name="gender" id="male">
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">female</label>
+        <br>
+        <br>
+        Country :
+        <select name="country" id="country">
+            <option > Select your country</option>
+            <option value="India">India</option>
+            <option value="Nepal">Nepal</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+        </select>
+        <br>
+        <br>
+        <label for="feedback">Massage:</label> 
+        <textarea name="feedback " id="feedback" cols="20" rows="5"></textarea>
+           <br>
+     </form>
+     <input type="checkbox" name="sub" id="sub">
+     <label for="sub">Subscribe</label>
+     <br>
+     <br>
+     <button>submit
+     </button>
+     <br>
+     <hr> 
+     <form action="/server">
+        <h2>Feedback Form</h2>
+        <label for="name">Name :</label>
+        <input type="name" name="name" id="name"placeholder="Write your name">
+        <br>
+        <br>
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email"placeholder="Write your email">
+        <br>
+        <br>
+        <label for="feedback">Message :</label>
+        <br>
+        <textarea name="feedback" id="feedback" cols="30" rows="5"></textarea>
+        <br>
+        <br>
+        <label for="rate">Rate us out of 5 :</label>
+        <br>
+        <input type="radio" name="rate" id="1">
+        <label for="1">1</label>
+        <br>
+        <input type="radio" name="rate" id="2">
+        <label for="2">2</label>
+        <br>
+        <input type="radio" name="rate" id="3">
+        <label for="3">3</label>
+        <br>
+        <input type="radio" name="rate" id="4">
+        <label for="4">4</label>
+        <br>
+        <input type="radio" name="rate" id="5">
+        <label for="5">5</label>
+        <br>
+        <br>
+        <button>send your massage</button>
+     </form>
+     
+
+</body>
+</html>
