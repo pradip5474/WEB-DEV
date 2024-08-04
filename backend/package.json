@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "math.js",
+  "dependencies": {
+    "figlet": "^1.7.0",
+    "random-words": "^2.0.1"
+  },
+  "scripts": {
+    "test": "\t"
+  },
+  "author": "pradip mali",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
