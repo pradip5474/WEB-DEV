@@ -1,0 +1,30 @@
+<%- include("include/head.ejs") %>
+<body>
+    <!-- <h1> there is s startig of percentage username%> this is your username</h1>
+    <button style="height: 25px; width: 100px; background-color: rgb(47, 47, 222);">follow</button>
+    <button style="height: 25px; width: 100px; background-color: pink;">massage</button>
+    <ul> same here is also starting of precentage for(let name of followrs){ %>
+        <li> same here and = is also there name %>  </li>
+        thi is the closing of for loop} %>
+    </ul> -->
+
+    <h1><%= data.name  %></h1>
+    <h1>followrs is :<%= data.followers  %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;following is :<%= data.following  %></h1>
+    <hr>
+    <button>follow</button>
+    <button>block</button>
+    <hr>
+    <% for(let post of data.posts){ %>
+                <img src="<%=post.image%>" alt="dog image">
+                <p> <h4>followers : <%= data.followers  %>   &nbsp;&nbsp;&nbsp;following : <%= data.following  %></h4>
+                    
+                       
+                   </p>
+        <% } %>
+        
+     <script src="/app.js"></script>
+</body>
+</html>
+
+
+
