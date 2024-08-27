@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit Page</title>
+</head>
+<body>
+    <h3>this is page for edit the Page</h3>
+    <h4>id =<%= result[0].id %></h4>
+    <h4>current username =<%= result[0].username %></h4>
+    <h4>email =<%= result[0].email %></h4>
+    
+    <form action="/user/<%= result[0].id%>?_method=PATCH" method="post">
+        <TEXtarea name="username"><%= result[0].username %></TEXtarea>
+        <input type="password" name="passward" id="passward">
+        <button>edit</button>
+    </form>
+</body>
+</html>

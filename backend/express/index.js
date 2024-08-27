@@ -8,21 +8,19 @@ app.listen(port,()=>{
     console.log(`app is listening on port${port}`);
 })
 
+// app.get("/",(req,res)=>{
+//     res.send("you are in root path  ");
+// })
+
+
 app.get("/",(req,res)=>{
-
-    res.send("you are in root path  ");
-})
-
-
-app.get("/search",(req,res)=>{
-    let {hg}=req.query;
-    if (!hg) {
+    let {q}=req.query;
+    if (!q) {
         res.send("<h1>does not exist</h1>")
     }
-    // console.log();
-    res.send(`this is your query ${hg}`);
+    console.log();
+    res.send(`<h1>this is your query </h1>`);
 })
-
 
 // app.get("/:username/:RollNo",(req,res)=>{
 //     res.send("you are in root path after changing");

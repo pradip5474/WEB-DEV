@@ -12,7 +12,7 @@ app.get("/get",(req,res)=>{
 
 app.post("/post",(req,res)=>{
     // let {username,pass}=req.query;
-    // let info=req.body;
+    // let info=req.body;   
     // console.log(req.body);
     //  res.send(`user id is<strong>${info.username}</strong>user pass is<strong>${info.pass}</strong>`);
      let {username,pass}=req.body;
