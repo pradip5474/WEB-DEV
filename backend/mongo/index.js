@@ -17,11 +17,25 @@ const userSchema = new mongoose.Schema({
 
 const User= mongoose.model("User",userSchema);
 
-User.find({}).then((res)=>{//there is a find one also which return a only one model
+User.findOneAndDelete({name:"nisha"}).then((res)=>{//there is a find one also which return a only one model
     console.log(res);//here we can send the arr index of res[0].name   
 }).catch((err)=>{
     console.log(err);
 });
+
+
+// User.updateOne({name:"pradip"},{name:"pradip mali"}).then((res)=>{//there is a find one also which return a only one model
+//     console.log(res);//here we can send the arr index of res[0].name   
+// }).catch((err)=>{
+//     console.log(err); 
+// });
+
+
+// User.findById("66cdd14949a77e4b37091031").then((res)=>{//there is a find one also which return a only one model
+//     console.log(res);//here we can send the arr index of res[0].name   
+// }).catch((err)=>{
+//     console.log(err);
+// });
 
 // const user1= new User({
 //     name:"pradip",
